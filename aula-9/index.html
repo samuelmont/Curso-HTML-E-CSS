@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,130 @@
     <title>Documento</title>
 
     <style>
-
-        body{
+        body {
             font-family: sans-serif;
         }
 
+        label{
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
-    <form>
+
+    <form action="#" method="get" target="_blanck" autocomplete="off">
+        <p>O meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </p>
+
+        <p>
+            <label for="dev1">Sou um dev1:</label>
+            <input type="checkbox" id="dev1" name="dev1" value="sim"><br>
+            <label for="dev2">Sou um dev2:</label>
+            <input type="checkbox" id="dev2" name="dev2" value="sim"><br>
+            <label for="dev3">Sou um dev3:</label>
+            <input type="checkbox" id="dev3" name="dev3" value="sim"><br>
+        </p>
+
+        <p>
+            Gênero: <br>
+            <label for="feminino">Feminino:</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+            <label for="masculino">Masculino:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+            <label for="outros">Outros:</label>
+            <input type="radio" id="outros" name="genero" value="outros"><br>
+        </p>
+
+        <p>
+            <label for="date">Data:</label><br>
+            <input type="date" id="date" name="date" value="2022-02-22">
+        </p>
+
+        <p>
+            <label for="datetime">Data-tempo:</label><br>
+            <input type="datetime-local" id="datetime" name="datetime" value="2022-02-22T22:22">
+        </p>
         
+        <p>
+            <label for="time">Tempo:</label><br>
+            <input type="time" id="time" name="time" value="22:22:22">
+        </p>
+
+        <p>
+            <label for="cor">Cor Preferida:</label><br>
+            <input type="color" id="cor" name="cor" value="#004d66">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="email@email.com">
+        </p>
+        
+        <p>
+            <label for="file">Arquivo:</label><br>
+            <input type="file" id="file" name="file" accept=".png,.svg,image/*" multiple>
+        </p>
+
+        <p>
+            <label for="number">Numero:</label><br>
+            <input type="number" id="number" name="number" min="10" max="50" step="5">
+        </p>
+
+        <p>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+
+        <p>
+            <label for="range">Range:</label><br>
+            <input type="range" id="range" name="range" min="10" max="50" step="5">
+        </p>
+
+        <p>
+            <label for="url">Url:</label><br>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <label for="search">Search:</label><br>
+            <input type="search" id="search" name="search" placeholder="Search">
+        </p>
+
+        <p>
+            <label for="select">Selecione alguma opção:</label>
+            <select id="select">
+                <option value="selecione" label="Selecione" selected disabled>
+                <optgroup label="Valores">                
+                    <option value="qualquer 1" label="Valor 1">
+                    <option value="qualquer 2" label="Valor 2">
+                    <option value="qualquer 3" label="Valor 3">
+                    <option value="qualquer 4" label="Valor 4">
+                </optgroup>
+                <optgroup label="Letras">                
+                    <option value="qualquer 1" label="letras 1">
+                    <option value="qualquer 2" label="letras 2">
+                    <option value="qualquer 3" label="letras 3">
+                    <option value="qualquer 4" label="letras 4">
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">Area de texto:</label><br>
+            <textarea name="textarea" id="textarea" rows="8" cols="50"></textarea>
+        </p>
+
+        <p>
+            <button type="reset">Reset </button>
+            <button type="submit">Enviar</button>
+        </p>
+
     </form>
+    
 </body>
+
 </html>
