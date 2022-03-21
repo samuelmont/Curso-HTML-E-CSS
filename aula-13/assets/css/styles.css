@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .pai h1+p {
+    color: red;           Adjacent sibling combinator
+} */
+
+/* .pai h1~p {
+    color: red;           General sibling selectors
+} */
+
+.pai .um~.dois {
+    color: red;
+}
+
+/* [meu-atributo] {
+    color: red;           CSS [attribute] Selector
+} */
+
+[meu-atributo="valor"] {
+    color: red;
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;         /*CSS [attribute] Selector do proprio HTML*/
+}
