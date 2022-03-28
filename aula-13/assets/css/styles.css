@@ -19,9 +19,29 @@
     color: red;           CSS [attribute] Selector
 } */
 
-[meu-atributo="valor"] {
+/* [meu-atributo="valor"] {
     color: red;
-}
+} */
+
+/* [meu-atributo~="valor"] {
+    color: red;           Seletor por um dos atributos(EX.: <p [meu-atributo="valor valor1 valor2"]></p> ""Tem que ter espaços entre os valores""
+} */
+
+/* [meu-atributo|="valor"] {
+    color: red;           Seletor por atributos seguidos de - (Traço) (EX.: <p [meu-atributo="valor-seila"]></p> ""Tem que ter traço e ser o primeiro valor do atributo""
+} */
+
+/* [meu-atributo^="comecou"] {
+    color: red;           Seletor por atributos com valores que começam com determinada letra ou palavra.
+} */
+
+/* [meu-atributo$="final"] {
+    color: red;            Seletor por atributos com valores que terminam com determinada letra ou palavra.
+} */
+
+/* [meu-atributo*="valor"] {
+    color: red;            Seletor por atributos que contenham valores com determinada letra ou palavra no começo, meio ou fim delas.
+} */
 
 [checked] {
     width: 50px;
