@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;           /*declaro o display como flex*/
+    flex-direction: column;  /*determino o eixo principal (row ou column)*/
+    justify-content: center; /*determino o comportamento do eixo principal*/
+    align-items: center;     /*determino o comportamento do eixo secundario*/
+    background-color: yellow;
+    height: 500px;
+}
+
+.flex-item {
+    color: white;
+    background-color: red;
+    margin: 10px;
+}
+
+.flex-item:nth-child(3) {
+    font-size: 40px;
+}
