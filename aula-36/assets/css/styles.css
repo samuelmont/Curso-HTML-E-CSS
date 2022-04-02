@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.grid {
+    width: calc(100% + 30px); /*para adicionar 30px a mais na tela mas usando overflow-x: hidden; para tirar esse overflow */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* gap: 30px 80px; gap para linhas e depois colunas*/
+    /* row-gap: 30px; gap especifico para linhas*/
+    /* column-gap: 30px; gap especifico para colunas*/
+}
+
+.grid div {
+    background-color: tomato;
+    min-height: 100px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.grid div:nth-child(5) {
+    background-color: darkred;
+}
